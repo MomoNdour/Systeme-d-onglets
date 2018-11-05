@@ -28,4 +28,20 @@ LORSQUE L'ON CLIQUE SUR UN ONGLET
         3) Afficher / masquer les contenus
 
 Le but c'est que si quelqu'un click sur un onglet et qu'il reactualise la page automatiquement ca affiche l'onglet qui correspond
-Pour recuperer l'ancre -> l'objet window.location (Inspecter -> sources) cette propriete contient tout un tas d'info sur l'url
+Pour recuperer l'ancre -> l'objet window.location (Inspecter -> console) cette propriete contient tout un tas d'info sur l'url
+
+var a = document.querySelector('&[href = "' + hash + '"]') // variable qui permet de savoir le lien qui est passé sur la barre d'adresse
+if(a !== null && !a.classList.contains('active')).. Si j'ai un element qui correspond a mon querySelector && mon element n'a pasla classe active dans ce cas la je vasi executer le code qui est dans les accolades (AFFICHER_ONGLET)
+
+
+
+    SYSTEME DE TRANSITION
+        //On ajoute la classe fade sur l'élément actif
+        //A la fin de l'animation
+        //      On retire la classe fade et active
+        //      On ajoute la classe avtive et fade à l'élément à afficher
+        //      On ajoute la classe in
+
+
+        La fonction (transitionend) permet de detecter la fin du changement
+        La fonction (offsetWidth) permet de donner la taille d'un element 

@@ -1,12 +1,61 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    padding: 50px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul.onglets, .onglets li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.onglets li
+{
+    float: left;
+    display: block;
+}
+.onglets::after{
+    display: table;
+    content: ' ';
+    clear: both;
+}
+.onglets a
+{
+    display: inline-block;
+    background-color: #EEE;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+    padding: 10px 15px;
+}
+.onglets .active a{
+    background-color: #fff;
+}
+.onglets-content
+{
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+    margin-bottom: 20px;
+}
 .onglet-content
 {
-    display: none; /*cacher le contenu des onglets*/
+    display: none;
 }
 .onglet-content.active
 {
-    display: block;/*afficher le contenu de l'onglet active*/
+    display: block;
 }
-.onglets .active a
+.fade
 {
-    color: red;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.fade.in
+{
+    opacity: 1;
 }

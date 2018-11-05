@@ -1,0 +1,31 @@
+LORSQUE L'ON CLIQUE SUR UN ONGLET 
+    1) On retire la classse active de l'onglet actif
+        j'ajoute la classe active à l'onglet actuel
+
+    2) On retire la classe active sur le contenu actuel
+        j'ajoute la classe active sur le contenu correspondant à mon click
+
+
+
+    var onglets = la variable qui contient tous les onglets
+    Cliquer sur un onglet équivaut à cliqur sur un des liens qui se trouvent dans la div de classe 'onglets'
+
+    this = l'élément sur laquelle on a cliqué
+    Le fonction (parentNode) pour remonter a une balise parent
+
+    classList.remove('active') pour retirer la classe active
+    classList.contains('active') pour savoir si dans cet element il y'a la classe active
+    classList.add('active') pour ajouter la classe active dans la liste des classes
+
+    La fonction (this.getAttribute) pour recuperer la valeur de l'attribut href, On pouvait utiliser la fonction (this.href) mais ca nous aurait donné tout le chemin ce qui ne marcherais pas
+
+
+
+
+    JE RECUPERE LE HASH 
+        1) Ajouter le classe active sur le lien href="hash"
+        2) Retirer la classe active sur les autres onglets
+        3) Afficher / masquer les contenus
+
+Le but c'est que si quelqu'un click sur un onglet et qu'il reactualise la page automatiquement ca affiche l'onglet qui correspond
+Pour recuperer l'ancre -> l'objet window.location (Inspecter -> sources) cette propriete contient tout un tas d'info sur l'url

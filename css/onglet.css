@@ -1,0 +1,12 @@
+.onglet-content
+{
+    display: none; /*cacher le contenu des onglets*/
+}
+.onglet-content.active
+{
+    display: block;/*afficher le contenu de l'onglet active*/
+}
+.onglets .active a
+{
+    color: red;
+}
